@@ -1,0 +1,1 @@
+# Rectangular rotating loader animation
