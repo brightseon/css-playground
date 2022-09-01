@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    position: relative;
+    width: 305px;
+    height: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader span {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    border-top: 10px solid rgba(255, 255, 255, 1);
+    border-bottom: 10px solid rgba(255, 255, 255, 1);
+    animation: animate 10s alternate infinite;
+}
+
+.loader span:nth-child(1) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation-delay: -0.1s;
+}
+
+.loader span:nth-child(2) {
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    animation-delay: -0.2s;
+}
+
+.loader span:nth-child(3) {
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    animation-delay: -0.3s;
+}
+
+.loader span:nth-child(4) {
+    top: 60px;
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    animation-delay: -0.4s;
+}
+
+.loader span:nth-child(5) {
+    top: 80px;
+    right: 80px;
+    bottom: 80px;
+    left: 80px;
+    animation-delay: -0.5s;
+}
+
+.loader span:nth-child(6) {
+    top: 100px;
+    right: 100px;
+    bottom: 100px;
+    left: 100px;
+    animation-delay: -0.6s;
+}
+
+.loader span:nth-child(7) {
+    top: 120px;
+    right: 120px;
+    bottom: 120px;
+    left: 120px;
+    animation-delay: -0.7s;
+}
+
+.loader span:nth-child(8) {
+    top: 140px;
+    right: 140px;
+    bottom: 140px;
+    left: 140px;
+    animation-delay: -0.8s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+
+    20% {
+        background-color: rgba(255, 255, 0, 0.2);
+    }
+
+    40% {
+        background-color: rgba(0, 255, 0, 0.2);
+    }
+
+    60% {
+        background-color: rgba(255, 0, 255, 0.2);
+    }
+
+    80% {
+        background-color: rgba(0, 255, 255, 0.2);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+}
