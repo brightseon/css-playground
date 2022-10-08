@@ -2,17 +2,6 @@
     box-sizing: border-box;
 }
 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-.wrapper {
-    display: table;
-    margin: 50px auto;
-    position: relative;
-}
-
 html,
 body {
     min-height: 100%;
@@ -25,19 +14,20 @@ body {
     justify-content: center;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, min-content);
+    gap: 2px;
+    margin: 50px 0;
+}
+
 .box {
     width: 25px;
     height: 25px;
-    float: left;
     background-color: white;
-    margin: 0 2px 2px 0;
     border-radius: 2px;
     opacity: 0;
     transform: translate(0, 0);
-}
-
-.clear {
-    clear: left;
 }
 
 .white {
