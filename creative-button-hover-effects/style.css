@@ -1,0 +1,49 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.button {
+    width: 24rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 3px solid #e8cc32;
+    cursor: pointer;
+    overflow: hidden;
+    transform: translate(0, 0);
+    font-size: 3rem;
+    color: #e8cc32;
+}
+
+.button::before,
+.button::after {
+    content: 'CREATIVE';
+    letter-spacing: 0.5rem;
+    position: absolute;
+}
+
+.button::after {
+    transform: translate(0, 0);
+}
+
+.button:hover::after {
+    transform: translate(400px, 0);
+    transition: all 0.8s ease-in-out;
+}
+
+.button::before {
+    transform: translate(-400px, 0);
+}
+
+.button:hover::before {
+    transform: translate(0, 0);
+    transition: all 0.8s ease-in-out;
+}
