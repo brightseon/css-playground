@@ -1,0 +1,67 @@
+:root {
+    --red: #d61c5b;
+    --orange: #f1573f;
+    --yello: #feb213;
+    --green: #6abc4e;
+    --blue: #2599d8;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+}
+
+h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22vw;
+    position: relative;
+    overflow: hidden;
+}
+
+h1::before,
+h1:after,
+span::before,
+span::after {
+    content: attr(data-heading);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+h1::before {
+    color: var(--red);
+    z-index: 5;
+    height: 25%;
+}
+
+h1::after {
+    color: var(--orange);
+    height: 35%;
+    z-index: 4;
+}
+
+span::before {
+    color: var(--yello);
+    z-index: 3;
+    height: 50%;
+}
+
+span {
+    display: flex;
+    color: var(--blue);
+    z-index: 2;
+}
+
+span::after {
+    color: var(--green);
+    height: 60%;
+    z-index: 2;
+}
